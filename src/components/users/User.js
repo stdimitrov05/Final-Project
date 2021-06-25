@@ -5,10 +5,10 @@ import axios from "axios";
 const User = () => {
   const [user, setUser] = useState({
     name: "",
-   school:"",
+    school: "",
     email: "",
     phone: "",
-    webiste: ""
+    webiste: "",
   });
   const { id } = useParams();
   useEffect(() => {
@@ -19,19 +19,36 @@ const User = () => {
     setUser(res.data);
   };
   return (
-    <div className="container py-4">
-      <Link className="btn btn-primary" to="/">
-        back to Home
-      </Link>
-      <h1 className="display-4">№{id} Name: {user.name}</h1>
-      <hr />
-      <ul className="list-group w-50">
-        <li className="list-group-item">name: {user.name}</li>
-        <li className="list-group-item">school: {user.school}</li>
-        <li className="list-group-item">email: {user.email}</li>
-        <li className="list-group-item">phone: {user.phone}</li>
-        <li className="list-group-item">Link to the race or name  : {user.website}</li>
-      </ul>
+    <div className="background-user">
+      <div className="container py-4">
+        <Link className="btn btn-primary" to="/">
+          Home
+        </Link>
+        <br></br>
+        <br></br>
+
+        <h1 className="display-4">
+          №{id} Name: {user.name}
+        </h1>
+        <hr />
+        <br></br>
+        <ul className="list-group w-50">
+          <li className="list-group-item">name: {user.name}</li>
+          <li className="list-group-item">school: {user.school}</li>
+          <li className="list-group-item">email: {user.email}</li>
+          <li className="list-group-item">phone: {user.phone}</li>
+          <li className="list-group-item">
+            Link to the race or name : {user.website}
+          </li>
+          <br></br>
+          <br></br>
+        </ul>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>  <br></br>
+      
+      <h2 className="info-container-user">Owner: St_d05</h2>
     </div>
   );
 };

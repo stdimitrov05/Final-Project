@@ -1,0 +1,36 @@
+.background-edit {
+         
+  overflow: auto;
+  color: rgb(10, 10, 10);
+  background-image: url("images/257248_shikhs_big-bang-wind-gif.gif");
+  background-size:cover;
+}
+.background-user{
+          overflow: hidden;
+          color: rgb(5, 46, 252);
+          background-image: url("images/video.gif");
+          background-size:cover; 
+}
+.backgraound-add{
+          overflow: hidden;
+          color: rgb(5, 46, 252);
+          background-image: url("images/pexels-pixabay-247431.jpg");
+          background-size:cover; 
+}
+.Header-text{
+          color: rgb(255, 255, 254);
+          text-align: center;
+          margin: 15px;
+}
+.info-container{
+          text-align: right;
+          font-size: large;
+          color: rgb(255, 255, 254);
+          margin: 15px;
+}
+.info-container-user{
+          text-align: right;
+          font-size: large;
+          color: rgb(10, 10, 10);
+          margin: 15px;
+}

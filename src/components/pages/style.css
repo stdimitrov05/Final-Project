@@ -1,3 +1,59 @@
-.test{
+.Header {
+  text-align: center;
+}
+.background {
+  overflow: auto;
+  color: rgb(255, 254, 254);
+  background-image: url("./images/pexels-riccardo-bertolo-4245826.jpg");
+  background-size: cover;
+}
+.table-color {
+  color: rgb(13, 9, 250);
+}
+.text-about{
+          text-align: center;
           color: blue;
+}
+.photo-card {
+  background-image: url(./images/myPhoto.jpg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px;
+}
+.background-aboutme {
+  overflow: auto;
+  color: rgb(255, 254, 254);
+  background-image: url("./images/pexels-riccardo-bertolo-4245826.jpg");
+  background-size: cover;
+}
+.background-about{
+          overflow: auto;
+          color: rgb(255, 254, 254);
+          background-image: url("./images/pexels-riccardo-bertolo-4245826.jpg");
+          background-size: cover;
+}
+.header-aboutme{
+          text-align: center;
+          color: black;
+}
+.info {
+  background-color: rgba(15, 15, 15, 0.534);
+  margin: 50px;
+}
+.text {
+  text-align: center;
+  color: rgba(7, 245, 253, 0.815);
+  size: 50px;
+}
+.social-media {
+  color: #fff;
+  text-align: right;
+  color: rgba(235, 242, 247, 0.801);
+  padding-left: 850px;
+}
+.about-me {
+  text-align: center;
+  color: rgba(7, 245, 253, 0.815);
+  size: 50px;
 }

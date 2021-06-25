@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
+import './style.css';
 const Home = () => {
   const [users, setUser] = useState([]);
 
@@ -20,11 +20,18 @@ const Home = () => {
   };
 
   return (
+    <div class="background">
     <div className="container">
-      <div className="py-4">
-        <h1>Home Page</h1>
-        <table class="table border shadow">
-          <thead class="thead-dark">
+      <div className="py-14">
+      <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+        <h1 class="Header">Home Page</h1>
+        <br></br>
+       <br></br>
+        <table class="table bordershadow">
+          <thead class="table-color">
             <tr>
               <th scope="col">Id</th>
               <th scope="col">Name</th>
@@ -62,6 +69,8 @@ const Home = () => {
           </tbody>
         </table>
       </div>
+      <h2 className="info-container">Owner: St_d05</h2>
+    </div>
     </div>
   );
 };

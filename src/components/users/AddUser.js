@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios'
 import { useHistory } from "react-router-dom";
-
+import './style.css'
 const AddUser = () => {
   let history = useHistory();
   const [user, setUser] = useState({
@@ -23,9 +23,12 @@ const AddUser = () => {
     history.push("/");
   };
   return (
+    <div className="backgraound-add">
+      <br></br>
     <div className="container">
       <div className="w-75 mx-auto shadow p-5">
         <h2 className="text-center mb-4">Add a student </h2>
+        <br></br>
         <form onSubmit={e => onSubmit(e)}>
           <div className="form-group">
             <input
@@ -80,6 +83,9 @@ const AddUser = () => {
           <button className="btn btn-primary btn-block">Add User</button>
         </form>
       </div>
+    </div>
+    <br></br>   <br></br>
+    <h2 className="info-container">Owner: St_d05</h2>
     </div>
   );
 };
